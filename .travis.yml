@@ -7,8 +7,8 @@ env:
   global:
    - secure: "UU7zF7dSLR7SwZS/B/5WBg/9QUrhVShMjU5b3xNKxnnOTfJGBoQRPECUkmfBU5txv4il+fRYt2+Ln7I3ySc8FE5gT+/vEOdVxKS1O38U9bgv37e+pjSDIK+9yC53qOTHDw4zn+wH0NhWE2Tm8EgYH8oGsDKIb23QgCIw03hldLFFAFO9fHKFaqEr1BNZ4Mpz6RSgH82DqCSWHdnWhy16Bk1zlebg0m5v+vJ2E9ngMqaYgyRkSWn6zwBlCHypV2bqxlixNtIRVebrR+3pVzy+/lCZATe1Y3obBfZtKKq3OgW6ACZ4D/oCebY6Zro/lFuJUidU3LsuHtbrt3dxOedeJs8xKdbu7gGSkalPDgMzSEB26Voway/bAlwxkmgz/A9mFPEiXVRX6FavRDPXCkGqhU8DFLVEBwWIvtqFTqvNVpKUtIzSVoF2137Q+exDnslPkCsaTthlXaS2QU1zsyqAsFE8m2xbNRKrDVGcAgV6IoXn8d+ox7fkxTPPzV5Qu7cChyYfV87Abe+TOUxO5mK3ibIeyU8QJOPqwnfG9aRACbvf6Yn3tx6TGqIYfEwXdbr4MgP1yKLIl1vtMauwDriIziIfzEjwJBtyxDlQpBAGcWidgN0pX9QyuIfqkxGkw3bjoa8vYC0Xe1jIpNQcuk5p3+75UJAT0SN3wY77J1DW6cs="
 before_install:
-  - wget http://downloads.sourceforge.net/project/cunit/CUnit/2.1-3/CUnit-2.1-3-src.tar.bz2
-  - tar -xvjpf CUnit-2.1-3-src.tar.bz2
+  - wget https://downloads.sourceforge.net/project/cunit/CUnit/2.1-3/CUnit-2.1-3.tar.bz2
+  - tar -xvjpf CUnit-2.1-3.tar.bz2
   - cd CUnit-2.1-3
   - ./configure --prefix=$TRAVIS_BUILD_DIR
   - make
