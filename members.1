@@ -1,0 +1,46 @@
+.TH MEMBERS "1" "February 2017" "members 0.0.1-alpha" "User Commands"
+.SH NAME
+members \- manual page for members 0.0.1-alpha
+.SH SYNOPSIS
+.B members
+[\fI\,OPTION\/\fR]... \fI\,GROUP\/\fR
+.SH DESCRIPTION
+Show members of a group.
+.PP
+members(1) is the complement of groups(1): where groups(1) shows the groups a
+user belongs to, members(1) shows users belonging to a group.
+.TP
+\fB\-p\fR, \fB\-\-primary\fR
+show only members for which GROUP is their
+primary group
+.TP
+\fB\-s\fR, \fB\-\-secondary\fR
+show only members who have a secondary
+membership in GROUP
+.TP
+\fB\-t\fR, \fB\-\-two\-lines\fR
+show primary members on the first line of output
+and secondary members on the second line; two
+lines are always printed
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+display this help and exit
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+output version information and exit
+.SS "Exit status:"
+.TP
+0
+OK
+.TP
+1
+input error (e.g. no GROUP, unrecognised flag)
+.TP
+2
+GROUP does not exist
+.TP
+3
+GROUP exists but could not be opened (see error message)
+.TP
+4
+GROUP did not have any members
