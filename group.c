@@ -15,7 +15,7 @@
  *         E_ERRNO if the getgrnam() call fails (check errno),
  *         otherwise E_SUCCESS.
  */
-inline enum return_t open_group(const char *group_name, struct group **group)
+enum return_t open_group(const char *group_name, struct group **group)
 {
     errno = 0;
     if ((*group = getgrnam(group_name))) {
