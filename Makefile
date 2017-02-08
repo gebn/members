@@ -1,11 +1,10 @@
-CFLAGS = -Wall -Werror -O2
-OBJ = help.o group.o main.o
+SRC_DIR = src
+export EXECUTABLE = members
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-members: $(OBJ)
-	$(CC) -o $@ $^
+$(EXECUTABLE):
+	$(MAKE) -C $(SRC_DIR)
+	mv $(SRC_DIR)/$@ .
 
 clean:
-	rm -f *.o members
+	$(MAKE) -C $(SRC_DIR) clean
+	rm -f $(EXECUTABLE)
