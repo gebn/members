@@ -1,5 +1,8 @@
 # members
 
+[![Build Status](https://travis-ci.org/gebn/members.svg?branch=master)](https://travis-ci.org/gebn/members)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/11687/badge.svg)](https://scan.coverity.com/projects/gebn-members)
+
 A patched drop-in replacement of [`members(1)`](https://linux.die.net/man/1/members), a tool for finding users in a group.
 
 ## Examples
