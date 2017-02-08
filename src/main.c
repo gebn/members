@@ -18,7 +18,7 @@ const char *PROGRAM = "members";
 /**
  * The version of this program.
  */
-const char *VERSION = "0.0.1-alpha";
+const char *VERSION = "0.0.1";
 
 /**
  * Command-line flags.
