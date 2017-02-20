@@ -11,8 +11,8 @@ script:
 addons:
   coverity_scan:
     project:
-      name: "gebn/members"
-      description: "An improved implementation of members(1)"
+      name: gebn/members
+      description: An improved implementation of members(1)
     notification_email: oss@gebn.co.uk
     build_command_prepend: make clean
     build_command: make
