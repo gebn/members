@@ -38,7 +38,7 @@ enum return_t open_group(const char *name, struct group **group)
  */
 enum return_t print_primary_members(const struct group *group)
 {
-    struct passwd* account;
+    struct passwd *account;
     bool first = true;
 
     while ((account = getpwent())) {
